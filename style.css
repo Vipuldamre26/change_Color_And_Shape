@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(27, 27, 27);
+    color: white;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+h1{
+    margin-top: 4rem;
+    font-size: 3.3rem;
+    font-weight: 600;
+    animation: colorchange 8s ease-in-out 300ms infinite;
+}
+
+.circle{
+    height: 11rem;
+    width: 11rem;
+    border-radius: 50%;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    height: 3rem;
+    width: 9rem;
+    border-radius: 6px;
+    border: none;
+    box-shadow: 1px 1px 5px 2px rgb(95, 95, 95);
+    cursor: pointer;
+    background-color: rgb(255, 145, 105);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2rem;
+    color: rgb(33, 33, 33);
+    font-weight: 400;
+}
+
+
+.triangle{
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background-color: rgb(0, 0, 197);
+    height: 5rem;
+    width: 5rem;
+}
+
+.square{
+    clip-path: inset(5% 11% 18% 10%);
+    background-color: palevioletred;
+    height: 5rem;
+    width: 5rem;
+}
+
+.circle-shape{
+    clip-path: circle(50% at 50% 50%);
+    background-color: darkolivegreen;
+    height: 5rem;
+    width: 5rem;
+}
+
+.rectangle{
+    clip-path: polygon(0 1%, 99% 0, 100% 69%, 0 69%);
+    background-color: crimson;
+    height: 5rem;
+    width: 5rem;
+}
+
+.diamond{
+    clip-path: polygon(50% 0%, 100% 19%, 50% 100%, 44% 100%, 0 20%);
+    background-color: indianred;
+    height: 5rem;
+    width: 5rem;
+}
+
+@keyframes colorchange {
+    0%{
+        color: antiquewhite;
+    }
+    10%{
+        color: rgb(64, 255, 230);
+    }
+    20%{
+        color: rgb(255, 123, 145);
+    }
+    30%{
+        color: rgb(253, 255, 150);
+    }
+    40%{
+        color: rgb(170, 160, 255);
+    }
+    50%{
+        color: rgb(64, 255, 230);
+    }
+    60%{
+        color: rgb(123, 255, 136);
+    }
+    70%{
+        color: rgb(255, 150, 255);
+    }
+    80%{
+        color: rgb(255, 64, 64);
+    }
+    90%{
+        color: rgb(116, 146, 255);
+    }
+    100%{
+        color: rgb(95, 255, 228);
+    }
+}
+
